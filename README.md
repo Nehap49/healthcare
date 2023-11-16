@@ -1,2 +1,2 @@
 # healthcare
-online oppointment booking 
+online appointment booking 
