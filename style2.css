@@ -1,0 +1,170 @@
+body{margin-top:20px;}
+.docter .classes-details ul.timetable {
+    margin: 0 0 22px;
+    padding:0;
+    
+}
+.docter .classes-details ul.timetable li {
+    list-style: none;
+    font-size: 15px;
+    color: #7f7f7f;
+}
+.docter .timetable {
+    max-width: 900px;
+    margin: 0 auto;
+}
+.docter .timetable-item {
+    border: 1px solid #d8e3eb;
+    padding: 15px;
+    margin-top: 20px;
+    position: relative;
+    display: block;
+    
+}
+@media (min-width: 768px) {
+    .docter .timetable-item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        
+    }
+}
+.docter .timetable-item-img {
+    overflow: hidden;
+    height: 100px;
+    width: 100px;
+    display: none;
+}
+.docter .timetable-item-img img {
+    height: 100%;
+}
+@media (min-width: 768px) {
+    .docter .timetable-item-img {
+        display: block;
+    }
+}
+.docter .timetable-item-main {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    position: relative;
+    margin-top: 12px;
+    
+    
+}
+@media (min-width: 768px) {
+    .docter .timetable-item-main {
+        margin-top: 0;
+        padding-left: 15px;
+        
+        
+    }
+}
+.docter .timetable-item-time {
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+.docter .timetable-item-name {
+    font-size: 14px;
+    margin-bottom: 19px;
+}
+.docter .btn-book {
+    padding: 6px 30px;
+    width: 100%;
+}
+.docter .timetable-item-like {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.docter .timetable-item-like .fa-heart-o {
+    display: block;
+    color: #fff;
+}
+.docter .timetable-item-like .fa-heart {
+    display: none;
+    color: #f15465;
+    background-color: #3d3d3d;
+}
+.docter .timetable-item-like:hover .fa-heart {
+    display: block;
+}
+.docter .timetable-item-like:hover .fa-heart-o {
+    display: none;
+}
+.docter .timetable-item-like-count {
+    font-size: 12px;
+    text-align: center;
+    padding-top: 5px;
+    color: #7f7f7f;
+}
+.docter .timetable-item-book {
+    width: 200px;
+}
+.docter .timetable-item-book .btn {
+    width: 100%;
+}
+.docter .schedule .nav-tabs {
+    border-bottom: 2px solid #104455;
+}
+.docter .schedule .nav-link {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #3d3d3d;
+    font-weight: 500;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+    border-radius: 2px 2px 0 0;
+    padding-left: 0;
+    padding-right: 0;
+    cursor: pointer;
+}
+@media (min-width: 768px) {
+    .docter .schedule .nav-link {
+        font-size: 16px;
+    }
+}
+.docter .schedule .nav-link.active {
+    background: #104455;
+    border-color: #104455;
+    color: #fff;
+}
+.docter .schedule .nav-link.active:focus {
+    border-color: #104455;
+}
+.docter .schedule .nav-link:hover:not(.active) {
+    background: #46c1be;
+    border-color: #46c1be;
+    color: #fff;
+}
+.docter .schedule .tab-pane {
+    padding-top: 10px;
+}
+.btn{
+    display: inline-block;
+    
+    padding: .3rem;
+    padding-left: 4rem;
+    border:var(--border);
+    border-radius: .1rem;
+    box-shadow: var(--box-shadow);
+    color:var(--green);
+    cursor: pointer;
+    font-size: 1.5rem;
+    background: skyblue;
+    box-sizing: border-box
+}
+
+
+
+.btn:hover{
+    background-color: #d8e3eb;
+}

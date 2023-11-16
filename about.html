@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>complete responsive hospital website design </title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link  rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <header class="header">
+
+    <a href="#" class="logo"> <i class="fas fa-heartbeat"></i> medcare. </a>
+
+    <div class="navbar">
+        <a href="home.html">home</a>
+        <a href="services.html">services</a>
+        <a href="about.html">about</a>
+        <a href="doctors.html">doctors</a>
+        <a href="facility.html">facility</a>
+        <a href="book.html">book</a>
+        <a href="review.html">review</a>
+        <a href="blogs.html">blogs</a>
+        <a href="login.php">login</a>
+        <a href="shedule.html">shedule</a>
+    
+        
+    </div>
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+</header>
+<section class="about" id="about">
+
+    <h1 class="heading"> <span>about</span> us </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="about-img (1).svg" alt="">
+        </div>
+
+        <div class="content">
+          <h3>We Take Care of your Healthy Life</h3>
+<p class="text">we are happy to provide care for all ages of people in our HEalth care Hospital.
+  The international patient Departmentat Health care is dedicated to ensuring 
+  international patients have a hassle-free,comfortable medical journey.
+ <span class="dots"> ...</span> <span class="moreText"> Our department works extensively with doctors and NGOs around  the world to provide acess
+  to quality healthcare at affotdable prices.</span></p>
+<button class="read-more-btn">Read More </button>
+
+
+
+
+
+        </div>
+
+    </div>
+
+</section>
+<script>
+const readMoreBtn = document.querySelector(".read-more-btn");
+const text = document.querySelector(".text");
+
+readMoreBtn.addEventListener("click", (e) => {
+  text.classList.toggle("show-more");
+  if (readMoreBtn.innerText === "Read More") {
+    readMoreBtn.innerText = "Read Less";
+  } else {
+    readMoreBtn.innerText = "Read More";
+  }
+});
+</script>
